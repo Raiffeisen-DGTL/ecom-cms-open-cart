@@ -383,7 +383,7 @@ class ControllerExtensionPaymentRaiffeisen extends Controller
                 'name' => 'без НДС',
             ],
             [
-                'id' => 'VAT10',
+                'id' => 'VAT0',
                 'name' => 'НДС по ставке 0%',
             ],
             [
@@ -401,6 +401,14 @@ class ControllerExtensionPaymentRaiffeisen extends Controller
             [
                 'id' => 'VAT120',
                 'name' => 'НДС чека по расчетной ставке 20/120',
+            ],
+            [
+                'id' => 'VAT22',
+                'name' => 'НДС чека по ставке 22%',
+            ],
+            [
+                'id' => 'VAT122',
+                'name' => 'НДС чека по расчетной ставке 22/122',
             ],
         ];
     }

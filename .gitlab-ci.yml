@@ -5,14 +5,12 @@ stages:
 include:
   - project: 'acquiring/devops/pipelines'
     ref: master
-    file: '.checkmarx-java.yml'
+    file: '.appscreener.yml'
+
+image: artifactory.raiffeisen.ru/ecom-image-docker/cli-tools:$CLI_TOOLS_TAG
 
 variables:
   APP_NAME: ecom-cms-open-chart
-
-checkmarx:
-  rules:
-    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
 
 push:
   stage: deploy
