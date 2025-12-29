@@ -157,7 +157,7 @@ class ControllerExtensionPaymentRaiffeisen extends Controller
             $this->config->get('payment_raiffeisen_env_url')
         );
 
-        $raiffeisenClient->postCallbackUrl($payment_notification_url);
+//        $raiffeisenClient->postCallbackUrl($payment_notification_url);
 
         $this->createLog(__METHOD__, $data);
 
