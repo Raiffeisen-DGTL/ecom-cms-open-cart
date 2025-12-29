@@ -114,9 +114,9 @@ class ControllerExtensionPaymentRaiffeisen extends Controller
         $real_plugin_url = str_replace('/admin', '', $this->url->link('', '', true));
         $orderId = $this->session->data['order_id'];
 
-        $payment_notification_url = $real_plugin_url.'extension/payment/raiffeisen/callback&orderId='.$orderId;
-        $payment_success_url = $real_plugin_url.'extension/payment/raiffeisen/success&orderId='.$orderId;
-        $payment_fail_url = $real_plugin_url.'extension/payment/raiffeisen/fail&orderId='.$orderId;
+        $payment_notification_url = $real_plugin_url.'extension/payment/raiffeisen/callback';
+        $payment_success_url = $real_plugin_url.'extension/payment/raiffeisen/success';
+        $payment_fail_url = $real_plugin_url.'extension/payment/raiffeisen/fail';
 
         $args = array(
             'publicId' => $this->config->get('payment_raiffeisen_public_id'),
